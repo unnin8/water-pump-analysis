@@ -27,3 +27,7 @@ This stage involved handling missing values, errors and outliers. The informatio
 - Extraction type: Null values and errors were replaced with the value ”other.”
 - Payment type and payment: These columns were redundant, so the ”payment” column was dropped.
 - Water quality/Quantity group/Quantity/Quality group: Quantity group and Quality group, these groups were dropped due to redundancy.
+## Feature Engineering
+- Age: The approximate age of the water point was calculated using the recorded year and the construction year.
+- Season: It was possible to determine the season during which the water points were recorded based on the pertinent months. 
+
