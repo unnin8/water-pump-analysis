@@ -7,3 +7,5 @@ The data that was analyzed was obtained from an online data mining competition (
 The dataset contains both numerical and categorical variables. The summary statistics reveal that the range and mean values differ significantly among the numerical variables. Similarly, the categorical variables have a varying number of unique values, with some columns having only one unique value. Overall, the dataset contains a wide range of information that has to be explored further to gain insights into the water wells in Tanzania. 
 
 ![Functional_nofunctional](https://github.com/user-attachments/assets/6f91edc9-5a68-48ee-a25b-df5157bc2d43)
+
+![Summary_stats](https://github.com/user-attachments/assets/9e8ba06a-133b-47a7-a18d-7a23aeea47ed)
