@@ -35,4 +35,6 @@ This stage involved handling missing values, errors and outliers. The informatio
 The data was split into training and test sets using a 70:30 ratio. The data was trained and then their performance was evaluated based on a base algorithms, and then hyperparameter tuning was used. 
 On comparison, the tuned Random Forest and CatBoost models yielded the highest accuracies. Therefore, a stack classifier was created using them as base classifiers. The Stack Classifier combines the predictions of multiple models to make the final prediction. An accuracy of 80.68 was acheived using the Stack classifier. 
 Overall, the Stack Classifier using Random Forest and CatBoost as base classifiers provided the highest accuracy in predicting the water point status. This demonstrates the effectiveness of combining different models to improve classification performance.
+## Conclusion
+From the selected model prediction we observed that the geographical feature along with the age of the pump play a bigger role in determining the status of the water pumps. This work could be used to emphasize the point that data mining and machine learning methods could be used to effectively help in water resource management. This could help the people in prioritizing the maintenance and repair on water points in several affected areas.
 
