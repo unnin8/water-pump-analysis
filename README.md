@@ -9,3 +9,21 @@ The dataset contains both numerical and categorical variables. The summary stati
 ![Functional_nofunctional](https://github.com/user-attachments/assets/6f91edc9-5a68-48ee-a25b-df5157bc2d43)
 
 ![Summary_stats](https://github.com/user-attachments/assets/9e8ba06a-133b-47a7-a18d-7a23aeea47ed)
+
+## Data Preprocessing 
+This stage involved handling missing values, errors and outliers. The information within the 3 data sets were combined into a single dataframe.
+- Subvillage: Existing null values were imputed with ”other,” and remaining error values (e.g., data with single letters) were also replaced with ”other.”
+-  Amount tsh: Since the data contained numerous zeros, the values were imputed with the log value. However, considering the large number of unusable values, the
+ column was ultimately dropped.
+- Date recorded: The column was split into year and month, which were later used for calculating the age of the water points.
+- Funder/Installer: Similar to the approach taken for subvillage, null values were replaced with ”other.” Clear errors were changed to ”other” as well (e.g., 1, A, M). The top 20 funder and installer categories were considered for modeling, and category entries were replaced as required.
+- Longitude/Latitude: There were clear errors in the entries, such as entries with values of 0, were replaced with the mean value.
+- GPS height: The same process as for longitude/latitude was applied.
+- Region/Region code: These columns were redundant, so the ”region” column was dropped. The district code column was also dropped for the same reason.
+- Population: Entries with population as 0 were imputed with the mean population. However, the data still exhibited skewness after analysis. To address this, the logarithm of the population was taken as the final population feature.
+- Values like ”pub meeting” and ”permit” were factorized.
+- Scheme management/Scheme name: The ”scheme name” column was dropped due to redundancy.
+- Construction year: Zeros in the construction year were imputed with the median, as the year cannot be null.
+- Extraction type: Null values and errors were replaced with the value ”other.”
+- Payment type and payment: These columns were redundant, so the ”payment” column was dropped.
+- Water quality/Quantity group/Quantity/Quality group: Quantity group and Quality group, these groups were dropped due to redundancy.
