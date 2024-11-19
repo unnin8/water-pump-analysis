@@ -29,5 +29,10 @@ This stage involved handling missing values, errors and outliers. The informatio
 - Water quality/Quantity group/Quantity/Quality group: Quantity group and Quality group, these groups were dropped due to redundancy.
 ## Feature Engineering
 - Age: The approximate age of the water point was calculated using the recorded year and the construction year.
-- Season: It was possible to determine the season during which the water points were recorded based on the pertinent months. 
+- Season: It was possible to determine the season during which the water points were recorded based on the pertinent months.
+## Classification
+8 different machine learning algorithms were employed to classify and predict the accuracy of the model.
+The data was split into training and test sets using a 70:30 ratio. The data was trained and then their performance was evaluated based on a base algorithms, and then hyperparameter tuning was used. 
+On comparison, the tuned Random Forest and CatBoost models yielded the highest accuracies. Therefore, a stack classifier was created using them as base classifiers. The Stack Classifier combines the predictions of multiple models to make the final prediction. An accuracy of 80.68 was acheived using the Stack classifier. 
+Overall, the Stack Classifier using Random Forest and CatBoost as base classifiers provided the highest accuracy in predicting the water point status. This demonstrates the effectiveness of combining different models to improve classification performance.
 
